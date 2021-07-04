@@ -3,7 +3,7 @@ const router = require('express').Router();
 
 //this makes html file displayed first
 
-router.get("*", (req, res) => {
+router.get("/index", (req, res) => {
     res.sendFile(path.join(__dirname, "../../public/index.html"));
 });
 
